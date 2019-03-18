@@ -4,7 +4,11 @@
   "scripts": {
     "ng": "ng",
     "start": "npm run test-coverage && ng serve",
+    "start:dev": "ng serve --configuration=dev",
+    "start:qa": "ng serve --configuration=qa",
     "build": "ng build",
+    "build:dev": "ng build --configuration=dev",
+    "build:qa": "ng build --configuration=qa",
     "test": "ng test",
     "test-coverage": "ng test --no-watch --code-coverage",
     "lint": "ng lint",
