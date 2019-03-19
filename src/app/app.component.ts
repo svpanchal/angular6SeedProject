@@ -7,6 +7,6 @@ import { environment } from '../environments/environment';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  public title: string = 'angular6SeedProject';
+  public title: string = 'Matrix Angular6 Seed Project';
   public env = environment;
 }
