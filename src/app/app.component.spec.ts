@@ -1,4 +1,5 @@
 import { async, TestBed } from '@angular/core/testing';
+import { NGXLogger, NGXLoggerMock } from 'ngx-logger';
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
@@ -6,6 +7,12 @@ describe('AppComponent', () => {
     TestBed.configureTestingModule({
       declarations: [
         AppComponent
+      ],
+      providers: [
+        {
+          provide: NGXLogger,
+          useClass: NGXLoggerMock
+        }
       ]
     }).compileComponents();
   }));
