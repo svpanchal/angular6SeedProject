@@ -1,4 +1,7 @@
+import { NgxLoggerLevel } from 'ngx-logger';
+
 export const environment = {
     production: false,
-    name: 'qa'
+    name: 'qa',
+    logLevel: NgxLoggerLevel.WARN
 };

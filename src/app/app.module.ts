@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { LoggerModule, NgxLoggerLevel } from 'ngx-logger';
 
+import { environment } from '../environments/environment.prod';
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -11,8 +12,8 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     LoggerModule.forRoot({
-      level: NgxLoggerLevel.TRACE,
-      disableConsoleLogging: false,
+      level: environment.logLevel,
+      disableConsoleLogging: false
       // serverLoggingUrl: '/api/logs',
       // serverLogLevel: NgxLoggerLevel.ERROR
     })
