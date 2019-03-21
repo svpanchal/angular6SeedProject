@@ -14,8 +14,8 @@ import { AppComponent } from './app.component';
     LoggerModule.forRoot({
       level: environment.logLevel,
       disableConsoleLogging: false
-      // serverLoggingUrl: '/api/logs',
-      // serverLogLevel: NgxLoggerLevel.ERROR
+      // serverLoggingUrl: '/api/logs',  optional field lets us define the full path to your api end point for logging to server
+      // serverLogLevel: NgxLoggerLevel.ERROR, defines the minimum log level for server-side logging
     })
   ],
   providers: [],

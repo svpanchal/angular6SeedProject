@@ -12,7 +12,7 @@ export class AppComponent implements OnInit {
   public env = environment;
 
   constructor(private logger: NGXLogger) {
-    // this.logger.error('Error message');
+    this.logger.warn('log message');
   }
 
   ngOnInit() {
