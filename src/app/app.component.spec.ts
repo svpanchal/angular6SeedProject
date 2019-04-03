@@ -1,4 +1,6 @@
+import { NO_ERRORS_SCHEMA } from '@angular/core';
 import { async, TestBed } from '@angular/core/testing';
+import { MatrixNg6LibraryModule } from 'matrix-ng6-library';
 import { NGXLogger, NGXLoggerMock } from 'ngx-logger';
 import { AppComponent } from './app.component';
 
@@ -12,8 +14,12 @@ describe('AppComponent', () => {
         {
           provide: NGXLogger,
           useClass: NGXLoggerMock
-        }
+        },
+        MatrixNg6LibraryModule
       ]
+      // schemas: [
+      //   NO_ERRORS_SCHEMA
+      // ]
     }).compileComponents();
   }));
 
